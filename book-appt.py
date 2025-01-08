@@ -72,7 +72,8 @@ time.sleep(30)
 driver.refresh()
 time.sleep(10)
 
-
+book = driver.find_element(By.XPATH,
+                           "//*[@id='dataTableServices']/tbody/tr[1]/td[4]/a/button")
 book.click()
 time.sleep(30)
 
