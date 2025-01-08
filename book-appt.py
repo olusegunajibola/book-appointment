@@ -44,7 +44,6 @@ driver.maximize_window()
 time.sleep(5)
 
 
-
 # Enter email
 email = driver.find_element(By.XPATH, "//*[@id='login-email']")
 email.send_keys(os.environ["Email"])
@@ -59,10 +58,27 @@ time.sleep(10)
 log_in = driver.find_element(By.XPATH, "//*[@id='login-form']/button")
 log_in.click()
 
+# click book
 driver.find_element(By.XPATH,"//*[@id='advanced']/span").click()
 time.sleep(10)
 
 # book appointment or check where possible
 book = driver.find_element(By.XPATH,
                            "//*[@id='dataTableServices']/tbody/tr[1]/td[4]/a/button")
+book.click()
+time.sleep(30)
+
+# Refresh the current page
+driver.refresh()
+time.sleep(10)
+
+
+book.click()
+time.sleep(30)
+
+# Refresh the current page
+driver.refresh()
+time.sleep(10)
+
+
 book.click()
