@@ -3,7 +3,6 @@ import time
 import subprocess
 
 def run_script():
-    # Replace 'your_script.py' with the path to your Python script
     subprocess.run(["C:\\ProgramData\\Anaconda3\\envs\\xPostsDwd\\python.exe",
                     "C:\\Users\\USER\\PycharmProjects\\book-appointment\\book-appt.py"])
 
